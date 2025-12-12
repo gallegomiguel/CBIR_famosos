@@ -18,9 +18,6 @@ Cómo preparar las imágenes
     - Descarga el ZIP desde el enlace.
     - Descomprímelo.
     - Coloca la carpeta resultante dentro del proyecto, asegurándote de que la estructura quede así:
-        /app.py
-        /cbir.py
-        /requirements.txt
         /images
             /Angelina Jolie
                 img1.jpg
