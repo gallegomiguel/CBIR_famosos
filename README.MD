@@ -1,4 +1,4 @@
-CBIR IMAGE SEARCH – Content-Based Image Retrieval
+# CBIR IMAGE SEARCH – Content-Based Image Retrieval
 
 Este proyecto implementa un sistema CBIR utilizando FAISS y múltiples extractores de características, accesible desde una interfaz web creada con Streamlit.
 
@@ -6,8 +6,8 @@ El usuario puede subir una imagen que se recortará automáticamente y obtener l
 
 Incluye además un cálculo opcional de Accuracy para evaluar el rendimiento del sistema.
 
-PASOS A SEGUIR PARA EJECUTARLO:
-1. Descarga del dataset de imágenes
+## PASOS A SEGUIR PARA EJECUTARLO:
+### 1. Descarga del dataset de imágenes
 
 Las imágenes del proyecto están disponibles en Google Drive:
 
@@ -37,7 +37,7 @@ https://drive.google.com/drive/folders/1jYbeSWFMlA3aM-rnECpdqRfAL51p2NjO?usp=sha
 
 Esto se trata de otra carpeta que utilizaremos para comprobar el funcionamiento del sistema.
 
-2. Instalación de dependencias
+### 2. Instalación de dependencias
 
 Crea un entorno virtual:
 
@@ -48,7 +48,7 @@ venv\Scripts\activate        # Windows
 Instala los requisitos:
 pip install -r requirements.txt
 
-3. Generar los índices FAISS
+### 3. Generar los índices FAISS
 
 Antes de usar la app, se deben crear los índices y para ello hay que ejecutar:
 python cbir.py
@@ -60,7 +60,7 @@ Esto:
 - Genera el archivo cbir_database/image_data.csv
 - Guarda el modelo KMeans para SIFT
 
-4. Ejecutar la aplicación Streamlit
+### 4. Ejecutar la aplicación Streamlit
 
 Una vez generados los índices, ejecutamos en la terminal:
 
@@ -70,14 +70,14 @@ La aplicación se abrirá en:
 
 http://localhost:8501
 
-Extractores disponibles
+## Extractores disponibles
 1. Histograma de Color. Comparación basada en colores (rápido)
 2. ResNet50. CNN pre-entrenada, 2048 dimensiones
 3. SIFT + Bag of Visual Words. Características locales + KMeans
 4. VGG-Face. Optimizado para detección de rostros
 5. DINOv2 (Meta AI). State-of-the-art en visión self-supervised
 
-Funcionamiento de la aplicación
+## Funcionamiento de la aplicación
 
 En la columna izquierda:
 - Selección del extractor
@@ -90,17 +90,17 @@ En la columna derecha:
 - Tiempo de inferencia
 - Cálculo de Top-10 Accuracy si introduces la etiqueta de la query (Escribir el nombre del famoso)
 
-Cálculo de Accuracy
+## Cálculo de Accuracy
 
 Puedes introducir la etiqueta correcta de la imagen de consulta: Top-10 Accuracy = (nº coincidencias entre las 10 mejores) / 10
 
-Notas importantes
+## Notas importantes
 - La carpeta cbir_database/ se genera automáticamente.
 - No editar a mano los archivos .faiss.
 - Si se añaden imágenes nuevas, vuelve a ejecutar cbir.py para reconstruir los índices.
 - Para DINOv2, con GPU CUDA, el proceso será más rápido.
 
-Estructura del proyecto
+## Estructura del proyecto
 cbir/
 │
 ├── app.py                # Interfaz Streamlit
