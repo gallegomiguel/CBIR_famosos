@@ -2,12 +2,9 @@
 
 > Reidentificación de celebridades mediante visión artificial.
 
-
 Este proyecto implementa un sistema de Recuperación de Imágenes Basado en Contenido (CBIR) diseñado para la reidentificación de personas. Utiliza un pipeline modular en Python que integra **FAISS** para la indexación vectorial de alta velocidad y permite comparar el rendimiento de 5 extractores de características que representan la evolución del estado del arte en visión artificial.
 
-
 El sistema incluye una interfaz interactiva basada en **Streamlit** y un módulo de evaluación automatizada.
-
 
 ## 🚀 Guía de Inicio Rápido
 ### 1. Preparación de los Datos
@@ -93,7 +90,7 @@ python evaluation.py
 
 Este comando:
 - Recorre la carpeta ```/test```
-- Computa el Top-$k$ *Accuracy* medio para $k=1$ y $k=10$ y latencia media para cada extractor, así como el Top-10 Accuracy medio para cada par famoso-extractor.
+- Computa el Top-k *Accuracy* medio para $k=1$ y $k=10$ y latencia media para cada extractor, así como el Top-10 Accuracy medio para cada par famoso-extractor.
 - Genera dos archivos ```.csv``` en la carpeta ```/proyecto``` con las métricas detalladas
 
 ## 🧠 Extractores Implementados
@@ -138,5 +135,5 @@ cbir_project/
 **Fecha**: 12 Dec 2025
 
 <div align="center">
-    <img src="https://www.upm.es/gsfs/SFS11864" width="300" alt="Logo UPM">
+    <img src="https://www.upm.es/gsfs/SFS11864" width="500" alt="Logo UPM">
 </div>
