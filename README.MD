@@ -1,9 +1,3 @@
-<div align="center">
-    <img src="https://www.upm.es/gsfs/SFS11864" width="300" alt="Logo UPM">
-</div>
-
-<br>
-
 # CBIR IMAGE SEARCH – Content-Based Image Retrieval
 
 > Reidentificación de celebridades mediante visión artificial.
@@ -89,7 +83,7 @@ Funcionalidades:
 
 ### 5. Evaluación automatizada (benchmarking)
 
-**Nota: se han incluido los archivos resultantes de esta parte en la carpeta ```/result```**
+**Nota: se han incluido los archivos resultantes de esta parte en la carpeta ```/result``` realizados con nuestro conjunto de consulta. Si desea evaluar el mismo, puede saltarse este paso.**
 
 Para obtener las métricas de rendimiento (Top-k *Accuracy* y Latencia) sobre todo el conjunto de test sin intervención manual:
 
@@ -142,3 +136,7 @@ cbir_project/
 
 
 **Fecha**: 12 Dec 2025
+
+<div align="center">
+    <img src="https://www.upm.es/gsfs/SFS11864" width="300" alt="Logo UPM">
+</div>
