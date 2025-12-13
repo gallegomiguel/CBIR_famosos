@@ -1,14 +1,19 @@
+<div align="center">
+    <img src="https://www.upm.es/gsfs/SFS11864" width="300" alt="Logo UPM">
+</div>
+
+<br>
+
 # CBIR IMAGE SEARCH – Content-Based Image Retrieval
 
 > Reidentificación de celebridades mediante visión artificial.
 
+
 Este proyecto implementa un sistema de Recuperación de Imágenes Basado en Contenido (CBIR) diseñado para la reidentificación de personas. Utiliza un pipeline modular en Python que integra **FAISS** para la indexación vectorial de alta velocidad y permite comparar el rendimiento de 5 extractores de características que representan la evolución del estado del arte en visión artificial.
+
 
 El sistema incluye una interfaz interactiva basada en **Streamlit** y un módulo de evaluación automatizada.
 
-El usuario puede subir una imagen que se recortará automáticamente y obtener las imágenes más similares dentro de la base de datos según el extractor seleccionado.
-
----
 
 ## 🚀 Guía de Inicio Rápido
 ### 1. Preparación de los Datos
