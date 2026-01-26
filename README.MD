@@ -73,9 +73,9 @@ streamlit run app.py
 La aplicación se abrirá automáticamente en ```http://localhost:8501```.
 
 Funcionalidades:
-- Selección dinámica de extractor
-- Carga y recorte manual de la imagen de consulta
-- Visualización de los resultados más similares, imágenes y etiquetas
+- Selección dinámica de extractor.
+- Carga y recorte manual de la imagen de consulta.
+- Visualización de los resultados más similares, imágenes y etiquetas.
 - Cálculo de Top-10 *Accuracy* en tiempo real (si se introduce la etiqueta).
 
 ### 5. Evaluación automatizada (benchmarking)
